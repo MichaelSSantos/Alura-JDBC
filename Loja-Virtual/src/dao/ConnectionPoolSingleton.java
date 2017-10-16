@@ -19,7 +19,7 @@ public class ConnectionPoolSingleton {
 		return uniqueInstance;
 	}
 	
-	public ConnectionPoolSingleton() {
+	private ConnectionPoolSingleton() {
 		MysqlConnectionPoolDataSource pool = new MysqlConnectionPoolDataSource();
 		pool.setUrl("jdbc:mysql://localhost:3306/lojavirtual");
 		pool.setUser("root");
